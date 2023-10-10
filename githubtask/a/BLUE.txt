@@ -13,12 +13,22 @@ BLEU는 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 �
 출처:https://velog.io/@yoonene/BLEU-score%EB%9E%80
 
 2. 어떻게 계산이 되는지
+2.1 단어 순서를 고려하지 않은 문제점 보완
+
+Ca = 번역된 문장
+Ref = 정답 문장
 
 Candidate : the cat the cat on the mat
 Reference1 : the cat is on the mat
 Reference2 : there is a cat on the mat
 
 자세한 사진은: https://github.com/overholl/2/blob/main/githubtask/a/ex.png
+
+2.2 짧은 문장일 수록 score가 높아지는 문제점 보완
+Ca가 Ref보다 문장의 길이가 짧은 경우에는 점수에 패널티를 줘야 하는데, 이를 브레버티 패널티(Brevity Penalty)라고 한다.
+
+수식에 대한 자세한 사진: https://github.com/overholl/2/blob/main/githubtask/a/pan.png
+
 출처: https://velog.io/@yoonene/BLEU-score%EB%9E%80
 
 각 각 모듈과 a언어에서 b언어로 번역한 각 번역 모듈마다의 관계 사진은
