@@ -1,0 +1,26 @@
+1.BLEU의 정의
+
+BLEU∗1 [Papineni 02]：単語 N-gram の一致率を用いて，
+出力文と参照文の表層的な類似度を評価する
+
+BLEU : 단어 N-gram의 일치율를 이용해, 출력문이랑 참조문의 표층적 유사도를 평가합니다.
+
+출처: https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_1P4GS604/_pdf/-char/ja 의 2페이지 強化学習の報酬(강화학습의 보상)에서 참고.
+
+BLEU는 기계 번역 결과와 사람이 직접 번역한 결과가 얼마나 유사한지 비교하여 번역에 대한 성능을 측정하는 방법이다.
+언어에 구애받지 않고 사용할 수 있으며, 계산 속도가 빠르다는 장점이 있다. 값이 클수록 성능이 좋다.
+
+출처:https://velog.io/@yoonene/BLEU-score%EB%9E%80
+
+2. 어떻게 계산이 되는지
+
+Candidate : the cat the cat on the mat
+Reference1 : the cat is on the mat
+Reference2 : there is a cat on the mat
+
+자세한 사진은: https://github.com/overholl/2/blob/main/githubtask/a/ex.png
+출처: https://velog.io/@yoonene/BLEU-score%EB%9E%80
+
+각 각 모듈과 a언어에서 b언어로 번역한 각 번역 모듈마다의 관계 사진은
+https://github.com/overholl/2/blob/main/githubtask/a/table.png
+출처: https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_1P4GS604/_pdf/-char/ja
