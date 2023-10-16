@@ -41,3 +41,6 @@
 인코더 - 디코더 구조(Encoder - Decoder structure)인코더-디코더 구조는 기계 번역 및 문장 생성과 같은 작업에서 특히 유용함.
 인코더는 입력 데이터를 이해하고, 디코더는 이해를 기반으로 적절한 출력을 생성함.
 트랜스포머 모델은 이러한 인코더-디코더 아키텍처를 활용하여 다양한 시퀀스 투 시퀀스 작업에 적용되며 뛰어난 성능을 발휘함.
+
+트랜스 포머 가계도
+https://github.com/overholl/2/blob/main/githubtask/a/Transformer/%ED%8A%B8%EB%9E%9C%EC%8A%A4%20%ED%8F%AC%EB%A8%B8%20%EA%B0%80%EA%B3%84%EB%8F%84.png
